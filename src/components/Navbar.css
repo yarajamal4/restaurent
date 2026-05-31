@@ -1,0 +1,92 @@
+.navbar {
+  background: transparent;
+  transition: background 0.35s ease, padding 0.35s ease;
+}
+
+.navbar.scrolled {
+  background: rgba(8, 8, 8, 0.97) !important;
+  backdrop-filter: blur(12px);
+  box-shadow: 0 1px 0 rgba(201, 168, 76, 0.12);
+}
+.navbar-brand-text {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1.6rem;
+  font-weight: 300;
+  letter-spacing: 0.2em;
+  color: #C9A84C !important;
+  text-decoration: none;
+}
+
+.navbar-brand-text span {
+  color: #f0ede8;
+}
+.nav-link-custom {
+  font-size: 0.65rem;
+  letter-spacing: 0.25em;
+  text-transform: uppercase;
+  color: rgba(240, 237, 232, 0.6) !important;
+  font-weight: 400;
+  padding: 8px 0 !important;
+  margin: 0 14px;
+  position: relative;
+  transition: color 0.35s ease;
+  text-decoration: none;
+}
+.nav-link-custom::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 1px;
+  background: #C9A84C;
+  transition: width 0.35s ease;
+}
+
+.nav-link-custom:hover,
+.nav-link-custom.active {
+  color: #C9A84C !important;
+}
+
+.nav-link-custom:hover::after,
+.nav-link-custom.active::after {
+  width: 100%;
+}
+.btn-outline-gold {
+  background: transparent;
+  color: #C9A84C;
+  border: 1px solid #C9A84C;
+  font-size: 0.65rem;
+  font-weight: 400;
+  letter-spacing: 0.3em;
+  text-transform: uppercase;
+  padding: 10px 24px;
+  transition: all 0.35s ease;
+  text-decoration: none;
+}
+
+.btn-outline-gold:hover {
+  background: #C9A84C;
+  color: #080808;
+}
+.navbar-toggler {
+  border: 1px solid rgba(201, 168, 76, 0.3) !important;
+  padding: 6px 10px;
+}
+
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(201,168,76,0.9)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e") !important;
+}
+@media (max-width: 991px) {
+  .navbar-collapse {
+    background: rgba(8, 8, 8, 0.97);
+    padding: 16px 20px;
+    margin-top: 10px;
+    border: 1px solid rgba(201, 168, 76, 0.1);
+  }
+
+  .nav-link-custom {
+    margin: 4px 0;
+    padding: 10px 0 !important;
+  }
+}
