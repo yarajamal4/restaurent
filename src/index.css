@@ -418,7 +418,7 @@ body {
   border-radius: 0;
   font-family: var(--font-body);
   font-size: 0.85rem;
-  padding: 12px 14px;
+  padding: 12px 180px;
   transition: border-color var(--transition), background var(--transition);
 }
 .form-control-dark:focus,
@@ -427,6 +427,15 @@ body {
   border-color: var(--gold);
   color: #f0ede8;
   box-shadow: none;
+}
+.form-control-dark::placeholder { color: rgba(240,237,232,0.25); }
+.form-select-dark option { background: var(--dark3); }
+.form-label-custom {
+  font-size: 0.6rem;
+  letter-spacing: 0.3em;
+  text-transform: uppercase;
+  color: var(--muted);
+  margin-bottom: 6px;
 }
 .form-control-dark::placeholder { color: rgba(240,237,232,0.25); }
 .form-select-dark option { background: var(--dark3); }
