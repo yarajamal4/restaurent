@@ -88,7 +88,7 @@ export default function Contact() {
               <div className="col-md-6">
                 <input
                   type="text"
-                  className="form-control-dark"
+                  className="form-control-Dark from-selectDark"
                   placeholder="Your Name"
                   value={formData.name}
                   onChange={(e) =>
@@ -100,7 +100,7 @@ export default function Contact() {
               <div className="col-md-6">
                 <input
                   type="text"
-                  className="form-control-dark"
+                  className="form-control-Dark from-selectDark"
                   placeholder="Country"
                   value={formData.origin}
                   onChange={(e) =>
@@ -112,7 +112,7 @@ export default function Contact() {
               <div className="col-12">
                 <textarea
                   rows="4"
-                  className="form-control-dark"
+                  className="form-control-Ddark from-selectDdark"
                   placeholder="Write your review..."
                   value={formData.text}
                   onChange={(e) =>

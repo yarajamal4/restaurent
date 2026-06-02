@@ -418,7 +418,29 @@ body {
   border-radius: 0;
   font-family: var(--font-body);
   font-size: 0.85rem;
+  padding: 12px 10px;
+  transition: border-color var(--transition), background var(--transition);
+}
+.form-control-Dark,
+.form-selectDark {
+  background: rgba(255,255,255,0.03);
+  border: 1px solid rgba(201,168,76,0.15);
+  color: #f0ede8;
+  border-radius: 0;
+  font-family: var(--font-body);
+  font-size: 0.85rem;
   padding: 12px 180px;
+  transition: border-color var(--transition), background var(--transition);
+}
+.form-control-Ddark,
+.form-selectDdark {
+  background: rgba(255,255,255,0.03);
+  border: 1px solid rgba(201,168,76,0.15);
+  color: #f0ede8;
+  border-radius: 0;
+  font-family: var(--font-body);
+  font-size: 0.85rem;
+  padding: 60px 463px;
   transition: border-color var(--transition), background var(--transition);
 }
 .form-control-dark:focus,
